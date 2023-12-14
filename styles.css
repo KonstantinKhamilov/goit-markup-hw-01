@@ -14,28 +14,6 @@ header {
   height: 62px;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  width: 115px;
-  height: 24px;
-  top: 24px;
-}
-
-header > a {
-  padding-left: 156px;
-}
-
-.logo > span {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -47,25 +25,30 @@ nav {
   gap: 40px;
 }
 
-nav > p {
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-address {
+address > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 306px;
-  height: 24px;
-  top: 24px;
-  padding-right: 100px;
+  list-style-type: none;
 }
 
-address > a {
+address > ul > li > a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -85,7 +68,7 @@ main {
   align-items: center;
 }
 
-.hero-image {
+main > section {
   font-weight: 700;
   font-size: 56px;
   color: white;
@@ -108,7 +91,7 @@ button {
 
 /*section1*/
 
-.sec1 {
+main > section > ul {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -118,27 +101,18 @@ button {
 
 /*section2*/
 
-.sec2 > h2 {
+main > section > h2 {
   font-size: 3em;
 }
 
-.sec2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  padding: 54px;
-  margin: auto;
-}
-
-.cards-container {
+main > section > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.card2 {
+main > section > ul > li {
   width: 230px;
   text-align: center;
 }
@@ -150,14 +124,16 @@ footer {
   background: rgba(46, 47, 66, 1);
 }
 
-.foot {
+footer > a {
   width: 300px;
   padding-top: 100px;
   padding-left: 100px;
 }
 
-.foot > ul {
-  padding-left: 0;
+footer > p {
+  width: 300px;
+  padding-top: 100px;
+  padding-left: 100px;
   font-weight: 400;
   font-size: 20px;
 }

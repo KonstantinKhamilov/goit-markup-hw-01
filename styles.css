@@ -14,6 +14,28 @@ header {
   height: 62px;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 115px;
+  height: 24px;
+  top: 24px;
+}
+
+header > a {
+  padding-left: 156px;
+}
+
+.logo > span {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -25,30 +47,25 @@ nav {
   gap: 40px;
 }
 
-nav > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-nav > ul > li > a {
+nav > p {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
-address > ul {
+address {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style-type: none;
+  width: 306px;
+  height: 24px;
+  top: 24px;
+  padding-right: 100px;
 }
 
-address > ul > li > a {
+address > a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -68,7 +85,7 @@ main {
   align-items: center;
 }
 
-main > section {
+.hero-image {
   font-weight: 700;
   font-size: 56px;
   color: white;
@@ -91,7 +108,7 @@ button {
 
 /*section1*/
 
-main > section > ul {
+.sec1 {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -101,18 +118,27 @@ main > section > ul {
 
 /*section2*/
 
-main > section > h2 {
+.sec2 > h2 {
   font-size: 3em;
 }
 
-main > section > ul {
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 54px;
+  margin: auto;
+}
+
+.cards-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-main > section > ul > li {
+.card2 {
   width: 230px;
   text-align: center;
 }
@@ -124,16 +150,14 @@ footer {
   background: rgba(46, 47, 66, 1);
 }
 
-footer > a {
+.foot {
   width: 300px;
   padding-top: 100px;
   padding-left: 100px;
 }
 
-footer > p {
-  width: 300px;
-  padding-top: 100px;
-  padding-left: 100px;
+.foot > ul {
+  padding-left: 0;
   font-weight: 400;
   font-size: 20px;
 }
